@@ -108,3 +108,8 @@ require get_template_directory() . '/inc/template-tags.php';
  * Functions which enhance the theme by hooking into WordPress.
  */
 require get_template_directory() . '/inc/template-functions.php';
+
+/**
+ * Implement All CSS and JS.
+ */
+include_once (get_template_directory() . '/inc/enqueue.php');

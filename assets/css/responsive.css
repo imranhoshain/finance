@@ -1,0 +1,136 @@
+/* Medium Layout: 1280px. */
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {}
+
+/* Tablet Layout: 768px. */
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .header-info ul li {
+        margin-left: 20px;
+    }
+    .mainmenu-wrap ul.nav.navbar-nav > li a {
+        margin-left: 20px;
+    }
+    .service-info {
+        margin-bottom: 40px
+    }
+    .about-img {
+        margin-top: 40px
+    }
+    .single-counter {
+        margin-bottom: 30px
+    }
+    .single-team {
+        margin-bottom: 30px
+    }
+    .contact-form {
+        margin-bottom: 40px
+    }
+}
+
+
+/* Wide Mobile Layout: 480px. */
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+
+    .header-title {
+        text-align: center
+    }
+    .header-info {
+        text-align: center;
+        float: none;
+    }
+    .navbar-brand {
+        margin-left: 15px;
+    }
+    .navbar-header .navbar-toggle {
+        background-color: #333;
+    }
+    .mainmenu-wrap ul.nav.navbar-nav > li a {
+        margin-left: 15px;
+        margin-bottom: 10px;
+    }
+    .navbar-nav li:hover {
+        background: #f5ab35 none repeat scroll 0 0;
+    }
+    .header-info ul li {
+        margin-left: 20px;
+        margin-right: 20px
+    }
+    .slider-text h1 {
+        font-size: 36px
+    }
+    .section-title br {
+        display: none;
+    }
+
+    .service-info {
+        margin-bottom: 40px
+    }
+    .about-img {
+        margin-top: 40px
+    }
+    .single-counter {
+        margin-bottom: 30px
+    }
+    .single-team {
+        margin-bottom: 30px
+    }
+    .contact-form {
+        margin-bottom: 40px
+    }
+
+}
+
+/* Small Mobile Layout*/
+
+@media only screen and (min-width: 0px) and (max-width: 479px) {
+
+    .header-title {
+        text-align: center
+    }
+    .navbar-nav li:hover {
+        background: #f5ab35 none repeat scroll 0 0;
+    }
+    .header-info {
+        text-align: center;
+        float: none;
+    }
+    .navbar-brand {
+        margin-left: 15px;
+    }
+    .navbar-header .navbar-toggle {
+        background-color: #333;
+    }
+    .mainmenu-wrap ul.nav.navbar-nav > li a {
+        margin-left: 15px;
+        margin-bottom: 10px;
+    }
+    .header-info ul li {
+        margin-left: 20px;
+        margin-right: 20px
+    }
+    .slider-text h1 {
+        font-size: 36px
+    }
+    .section-title br {
+        display: none;
+    }
+
+    .service-info {
+        margin-bottom: 40px
+    }
+    .about-img {
+        margin-top: 40px
+    }
+    .single-counter {
+        margin-bottom: 30px
+    }
+    .single-team {
+        margin-bottom: 30px
+    }
+    .contact-form {
+        margin-bottom: 40px
+    }
+
+}
