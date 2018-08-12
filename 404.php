@@ -14,7 +14,7 @@ get_header();
 
 </div>
 
-<div class="error-content section-padding-bottom">
+<div class="error-content section-padding">
 	<div class="container">
 		<div class="row">
 			<div class="col-xs-12">

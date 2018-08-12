@@ -113,3 +113,13 @@ require get_template_directory() . '/inc/template-functions.php';
  * Implement All CSS and JS.
  */
 include_once (get_template_directory() . '/inc/enqueue.php');
+
+/**
+ * Implement Dropdown Menu.
+ */
+include_once (get_template_directory().'/inc/navwalker.php');
+
+/**
+ * Themeoptions and metabox functions.
+ */
+include_once (get_template_directory().'/inc/theme-metabox-and-options.php');

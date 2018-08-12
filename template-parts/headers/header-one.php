@@ -1,23 +1,35 @@
-<?php
-//$enable_search = cs_get_option('enable_search');
 
-?>
     <!-- Header-Area Start -->
     <div id="home" class="header-top-area">
         <div class="container">
             <div class="row">
                 <div class="col-sm-6">
                     <div class="header-title">
-                        <span>We are business company</span>
+                        <?php 
+                            $header_top_text = cs_get_option('header_top_left_text');
+                            if(!empty($header_top_text)) :                                
+                        ?>
+                            <span><?php echo $header_top_text; ?></span>
+                        <?php endif; ?>
                     </div>
                 </div>
                 <div class="col-sm-6">
-                    <div class="header-info">
-                        <ul>
-                            <li><i class="fa fa-envelope"></i> Finance@gmail.com</li>
-                            <li><i class="fa fa-phone"></i> +12249991971</li>
-                        </ul>
-                    </div>
+                    <?php 
+                        $header_top_right_array = cs_get_option('header_top_right_array');
+                        if(!empty($header_top_right_array)) :                                
+                    ?> 
+                        <div class="header-info">
+                            <ul>
+                                <?php 
+                                    foreach ($header_top_right_array as $header_top_right ) :
+
+                                ?>
+                                    <li><i style="color: <?php echo $header_top_right['header_top_icon_color']?>" class="<?php echo $header_top_right['header_top_icon']?>"></i><?php echo $header_top_right['header_sub_title']?> </li> 
+
+                                <?php endforeach; ?>
+                            </ul>
+                        </div>
+                    <?php endif; ?>
                 </div>
             </div>
         </div>
@@ -48,23 +60,13 @@
                             'menu'              => 'Main Menu',
                             'theme_location'    => 'main_menu',
                             'depth'             => 3,
-                            'container'         => 'ul',
-                            'container_class'   => 'nav navbar-nav navbar-right',
-                            'menu_class'        => 'smooth-menu',
+                            'container'         => 'ul',                            
+                            'menu_class'        => 'nav navbar-nav navbar-right',
                             'menu_id'           => '',
                             'fallback_cb'       => 'wp_bootstrap_navwalker::fallback',
                             'walker'            => new wp_bootstrap_navwalker())
                         );
-                    ?>  
-                    <ul class="">
-                        <li class=""><a href="#home">home</a></li>
-                        <li class="smooth-menu"><a href="#service">service </a></li>
-                        <li class="smooth-menu"><a href="#about">about </a></li>
-                        <li class="smooth-menu"><a href="#portfolio">portfolio </a></li>
-                        <li class="smooth-menu"><a href="#team">team </a></li>
-                        <li class="smooth-menu"><a href="#testimonial">testimonial </a></li>
-                        <li class="smooth-menu"><a href="#contact">contact </a></li>
-                    </ul>
+                    ?>                    
                 </div>
                 <!-- /.navbar-collapse -->
             </div>

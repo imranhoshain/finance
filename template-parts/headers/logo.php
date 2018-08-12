@@ -1,5 +1,5 @@
 <?php
-//$logo_text = cs_get_option('logo_text');
+$logo_text = cs_get_option('header_logo_text');
 
 if(has_custom_logo()){
 	the_custom_logo();
