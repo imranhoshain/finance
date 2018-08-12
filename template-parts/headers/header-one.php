@@ -33,14 +33,31 @@
                             <span class="icon-bar"></span>
                         </button>
                     <!-- mobile menu button, shows only in mobile -->
-                    <a class="navbar-brand" href="index-2.html"><span class="text-logo">Finance</span></a>
+                    <div class="logo-area">                        
+                        <?php
+                            get_template_part( 'template-parts/headers/logo');
+                        ?>
+                    </div>
                     <!-- main logo here -->
                 </div>
 
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="navbar-collapse collapse" id="navMenu">
-                    <ul class="nav navbar-nav navbar-right">
-                        <li class="smooth-menu"><a href="#home">home</a></li>
+                    <?php
+                       wp_nav_menu( array(
+                            'menu'              => 'Main Menu',
+                            'theme_location'    => 'main_menu',
+                            'depth'             => 3,
+                            'container'         => 'ul',
+                            'container_class'   => 'nav navbar-nav navbar-right',
+                            'menu_class'        => 'smooth-menu',
+                            'menu_id'           => '',
+                            'fallback_cb'       => 'wp_bootstrap_navwalker::fallback',
+                            'walker'            => new wp_bootstrap_navwalker())
+                        );
+                    ?>  
+                    <ul class="">
+                        <li class=""><a href="#home">home</a></li>
                         <li class="smooth-menu"><a href="#service">service </a></li>
                         <li class="smooth-menu"><a href="#about">about </a></li>
                         <li class="smooth-menu"><a href="#portfolio">portfolio </a></li>

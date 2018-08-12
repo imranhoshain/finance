@@ -235,6 +235,9 @@ body .testi-area .owl-dot {
     text-transform: capitalize;
 }
 
+.logo-area a.navbar-brand {
+    height: auto;
+}
 .nav.navbar-nav.navbar-right {
     margin-top: 10px;
 }
