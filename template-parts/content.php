@@ -32,25 +32,34 @@
 	<?php finance_post_thumbnail(); ?>
 
 	<div class="entry-content">
-		<?php
-		the_content( sprintf(
-			wp_kses(
-				/* translators: %s: Name of current post. Only visible to screen readers */
-				__( 'Continue reading<span class="screen-reader-text"> "%s"</span>', 'finance' ),
-				array(
-					'span' => array(
-						'class' => array(),
-					),
-				)
-			),
-			get_the_title()
-		) );
 
-		wp_link_pages( array(
-			'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'finance' ),
-			'after'  => '</div>',
-		) );
-		?>
+		<?php
+			if(is_single()){
+			the_content( sprintf(
+				wp_kses(
+					/* translators: %s: Name of current post. Only visible to screen readers */
+					__( 'Continue reading<span class="screen-reader-text"> "%s"</span>', 'industry-demo' ),
+					array(
+						'span' => array(
+							'class' => array(),
+						),
+					)
+				),
+				get_the_title()
+			) );
+		} else {
+
+			the_excerpt(); //Blog page add
+
+			echo '<p class="read-more-warp"><a href="' . esc_url( get_permalink() ) . '" class="bexed-btn">Read More</a></p>';
+
+			}
+
+			wp_link_pages( array(
+				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'industry-demo' ),
+				'after'  => '</div>',
+			) );
+		?>		
 	</div><!-- .entry-content -->
 
 	<footer class="entry-footer">

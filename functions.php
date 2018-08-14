@@ -59,12 +59,6 @@ if ( ! function_exists( 'finance_setup' ) ) :
 			'caption',
 		) );
 
-		// Set up the WordPress core custom background feature.
-		add_theme_support( 'custom-background', apply_filters( 'finance_custom_background_args', array(
-			'default-color' => 'ffffff',
-			'default-image' => '',
-		) ) );
-
 		// Add theme support for selective refresh for widgets.
 		add_theme_support( 'customize-selective-refresh-widgets' );
 
@@ -75,9 +69,7 @@ if ( ! function_exists( 'finance_setup' ) ) :
 		 */
 		add_theme_support( 'custom-logo', array(
 			'height'      => 250,
-			'width'       => 250,
-			'flex-width'  => true,
-			'flex-height' => true,
+			'width'       => 250,			
 		) );
 	}
 endif;
@@ -98,6 +90,16 @@ function finance_content_width() {
 }
 add_action( 'after_setup_theme', 'finance_content_width', 0 );
 
+//Blog page pagination
+if ( ! function_exists( 'post_pagination' ) ) :
+   function post_pagination() {
+     the_posts_pagination( array(
+    'mid_size' => 2,
+    'prev_text' => __( '&laquo;', 'thenobility' ),
+    'next_text' => __( '&raquo', 'thenobility' ),
+) );
+   }
+endif;
 
 /**
  * Custom template tags for this theme.

@@ -576,21 +576,12 @@ a.common_btn i {
 .single-counter {}
 
 .counter-icon {
-    width: 70px;
-    height: 70px;
-    border-radius: 50%;
-    background-color: #fff;
-    text-align: center;
-    line-height: 70px;
-    font-size: 24px;
+    
     float: left;
 }
 
 .counter-icon i {}
 
-.counter-detail {
-    padding-left: 85px
-}
 
 .counter-detail h2 {
     color: #fff;

@@ -43,7 +43,7 @@ function finance_scripts() {
 	//Isotop js
     wp_enqueue_script( 'isotope-min', get_template_directory_uri().'/assets/js/isotope.min.js', array('jquery'), '3.0.1', true );
 	//Google map js
-    wp_enqueue_script( 'googlemap', get_template_directory_uri().'/assets/js/googlemap.js', array('jquery'), '1.0', true );	
+    //wp_enqueue_script( 'googlemap', get_template_directory_uri().'/assets/js/googlemap.js', array('jquery'), '1.0', true );	
 	//main js    
 	wp_enqueue_script( 'main', get_template_directory_uri().'/assets/js/main.js', array('jquery'), '1.0', true );
 

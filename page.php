@@ -72,9 +72,7 @@ get_header();
 
 <?php while ( have_posts() ) : the_post(); ?>
 	<div id="primary" class="content-area">
-		<main id="main" class="site-main">
-			<div class="container">
-				<div class="row">
+		<main id="main" class="site-main">			
 					<?php
 						get_template_part( 'template-parts/content', 'page' );
 
@@ -82,9 +80,7 @@ get_header();
 						if ( comments_open() || get_comments_number() ) :
 							comments_template();
 						endif;					
-					?>
-				</div>
-			</div>
+					?>				
 		</main><!-- #main -->
 	</div><!-- #primary -->
 <?php endwhile; // End of the loop.?>
