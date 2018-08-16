@@ -8,11 +8,14 @@ function finance_team_section_shortcode($atts)
         'team_member_image' => '',               
         'team_member_name' => '',               
         'team_member_position' => '',               
-        'social_info' => '',         
-        'social_link' => '',         
+        'social_icon_list' => '',               
+        'social_link' => '',               
+                     
+               
+                
          
-    ), $atts));
-   
+    ), $atts));    
+    
     
  ?>   
 
@@ -20,13 +23,12 @@ function finance_team_section_shortcode($atts)
             <div class="elementor-image-box-wrapper">
                <figure class="team-img elementor-image-box-img">
                 <img src="<?php echo $team_member_image['url']?>" alt="">
-                <div class="team-social-icon"> 
+                <div class="team-social-icon elementor-social-icons-wrapper"> 
                     <?php 
-                        foreach($social_info as $single_social_info){     
-                    ?>                  
-                    <a href=" <?php 
-                        foreach($single_social_info['social_link'] as $single_social_link){     
-                    ?> <?php var_dump($single_social_link); } ?>"><i class="<?php echo $single_social_info['social'] ?>"></i></a>      
+                        foreach($social_icon_list as $single_social_icon){                                                   
+                    ?>                    
+                    <a href="<?php                                     
+                     echo ($single_social_icon['social_link']); ?>" class="elementor-social-icon team-social"><i class="<?php echo $single_social_icon['social'] ?>"></i></a>      
                     <?php }?>
                 </div>
                 </figure>

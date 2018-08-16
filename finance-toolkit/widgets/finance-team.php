@@ -230,21 +230,18 @@ class Finance_Team_Section extends Widget_Base {
 			]
 		);
 
-		$repeater->add_control(
-			'link',
+        $repeater->add_control(
+			'social_link',
 			[
-				'label' => __( 'Link', 'elementor' ),
-				'type' => Controls_Manager::URL,
-				'label_block' => true,
-				'default' => [
-					'is_external' => 'true',
-				],
-				'placeholder' => __( 'https://your-link.com', 'elementor' ),
+				'label' => __( 'Enter social link', 'plugin-name' ),
+				'type' => Controls_Manager::TEXT,
+				'input_type' => 'url',
+				'placeholder' => __( 'https://your-link.com', 'plugin-name' ),
 			]
 		);
-
+        
 		$this->add_control(
-			'social_info',
+			'social_icon_list',
 			[
 				'label' => __( 'Social Icons', 'elementor' ),
 				'type' => Controls_Manager::REPEATER,
@@ -264,47 +261,7 @@ class Finance_Team_Section extends Widget_Base {
 			]
 		);
 
-		$this->add_control(
-			'shape',
-			[
-				'label' => __( 'Shape', 'elementor' ),
-				'type' => Controls_Manager::SELECT,
-				'default' => 'rounded',
-				'options' => [
-					'rounded' => __( 'Rounded', 'elementor' ),
-					'square' => __( 'Square', 'elementor' ),
-					'circle' => __( 'Circle', 'elementor' ),
-				],
-				'prefix_class' => 'elementor-shape-',
-			]
-		);
-
-		$this->add_responsive_control(
-			'align',
-			[
-				'label' => __( 'Alignment', 'elementor' ),
-				'type' => Controls_Manager::CHOOSE,
-				'options' => [
-					'left'    => [
-						'title' => __( 'Left', 'elementor' ),
-						'icon' => 'fa fa-align-left',
-					],
-					'center' => [
-						'title' => __( 'Center', 'elementor' ),
-						'icon' => 'fa fa-align-center',
-					],
-					'right' => [
-						'title' => __( 'Right', 'elementor' ),
-						'icon' => 'fa fa-align-right',
-					],
-				],
-				'default' => 'center',
-				'selectors' => [
-					'{{WRAPPER}}' => 'text-align: {{VALUE}};',
-				],
-			]
-		);
-
+		
 		$this->add_control(
 			'view',
 			[

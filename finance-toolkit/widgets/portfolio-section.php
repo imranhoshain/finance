@@ -47,7 +47,7 @@ class Finance_Portfolio_Section extends Widget_Base {
 	 * @return string Widget icon.
 	 */
 	public function get_icon() {
-		return 'fa fa-calendar';
+		return 'eicon-pojome';
 	}
 
 	/**
@@ -87,12 +87,17 @@ class Finance_Portfolio_Section extends Widget_Base {
   		); 
  
         $this->add_control(
-			'theme_select',
-			[
-				'label' => esc_html_x("Theme Selection", 'Admin Panel','finance-toolkit'),
-				'type' => Controls_Manager::TEXT,
-				'default' => esc_html_x("1", 'Admin Panel','finance-toolkit'),			
-			]
+			'theme_select',            
+            [
+				'label' => __( 'Isotop Style', 'finance-toolkit' ),
+				'type' => Controls_Manager::SELECT,
+				'default' => esc_html_x("1", 'Admin Panel','finance-toolkit'),
+				'options' => [
+					'1' => 'Style 1',
+                    '2' => 'Style 2'
+				],
+				
+			]			
 		);
         
                 

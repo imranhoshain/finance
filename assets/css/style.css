@@ -724,7 +724,7 @@ a.common_btn i {
 }
 
 .team-social-icon {
-    position: absolute;
+     position: absolute; 
     left: 0;
     bottom: -43px;
     width: 100%;
@@ -734,10 +734,10 @@ a.common_btn i {
     background-color: rgba(0, 0, 0, 0.6);
 }
 
-.single-team:hover .team-social-icon {
+ .single-team:hover .team-social-icon {
     bottom: 0;
     opacity: 1;
-}
+} 
 
 .team-social-icon a {
     display: inline-block;

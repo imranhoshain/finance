@@ -6,6 +6,7 @@ use Finance\Widgets\Finance_Service_Section;
 use Finance\Widgets\Finance_Portfolio_Section;
 use Finance\Widgets\Finance_Counter_Section;
 use Finance\Widgets\Finance_Team_Section;
+use Finance\Widgets\Finance_Testimonial_Section;
 
 if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 
@@ -66,6 +67,7 @@ class Plugin {
 		require __DIR__ . '/widgets/portfolio-section.php';
 		require __DIR__ . '/widgets/finance-counter.php';
 		require __DIR__ . '/widgets/finance-team.php';
+		require __DIR__ . '/widgets/testimonial-section.php';
 		
 	}
 
@@ -83,6 +85,7 @@ class Plugin {
 		\Elementor\Plugin::instance()->widgets_manager->register_widget_type( new Finance_Portfolio_Section() );
 		\Elementor\Plugin::instance()->widgets_manager->register_widget_type( new Finance_Counter_Section() );
 		\Elementor\Plugin::instance()->widgets_manager->register_widget_type( new Finance_Team_Section() );
+		\Elementor\Plugin::instance()->widgets_manager->register_widget_type( new Finance_Testimonial_Section() );
 		
 	}
 }

@@ -11,8 +11,7 @@ function finance_scripts() {
 	wp_enqueue_style( 'animate-style', get_template_directory_uri().'/assets/css/animate.css', array(), '1.0', 'all' );
 	wp_enqueue_style( 'animated-headline', get_template_directory_uri().'/assets/css/animated-headline.css', array(), '1.0', 'all' );
 	wp_enqueue_style( 'font-awesome', get_template_directory_uri().'/assets/css/font-awesome.css', array(), '4.6.3', 'all' );	
-	wp_enqueue_style( 'magnific-popup', get_template_directory_uri().'/assets/css/magnific-popup.css', array(), '1.0', 'all' );
-	wp_enqueue_style( 'owl-carousel', get_template_directory_uri().'/assets/css/owl.carousel.css', array(), '1.0', 'all' );
+	wp_enqueue_style( 'magnific-popup', get_template_directory_uri().'/assets/css/magnific-popup.css', array(), '1.0', 'all' );	
 	wp_enqueue_style( 'camera-slider', get_template_directory_uri().'/assets/css/camera.css', array(), '1.0', 'all' );
 	wp_enqueue_style( 'finance-default-style', get_template_directory_uri().'/assets/css/default.css', array(), '1.0', 'all' );
 	wp_enqueue_style( 'finance-style', get_template_directory_uri().'/assets/css/style.css', array(), '1.0', 'all' );
@@ -22,13 +21,10 @@ function finance_scripts() {
 	//All JS File
 	wp_enqueue_script( 'modernizr', get_template_directory_uri().'/assets/js/modernizr.js', array('jquery'), '2.8.3', true );
 	
-
 	wp_enqueue_script( 'bootstrap', get_template_directory_uri().'/assets/js/bootstrap.min.js', array('jquery'), '3.3.7', true );
 	//camera slider JS
     wp_enqueue_script( 'camera', get_template_directory_uri().'/assets/js/camera.min.js', array('jquery'), '1.0', true );
-	//Owl slider JS
-    wp_enqueue_script( 'owl-carousel-js', get_template_directory_uri().'/assets/js/owl.carousel.min.js', array('jquery'), '1.0', true );	
-	//jquery.easing js
+	
     wp_enqueue_script( 'jquery-easing', get_template_directory_uri().'/assets/js/jquery.easing.1.3.js', array('jquery'), '1.3', true );
 	//waypoints js
     wp_enqueue_script( 'waypoints-min', get_template_directory_uri().'/assets/js/waypoints.min.js', array('jquery'), '1.6.2', true );

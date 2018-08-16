@@ -50,7 +50,7 @@ class Finance_Counter_Section extends Widget_Base {
 	 * @return string Widget icon.
 	 */
 	public function get_icon() {
-		return 'fa fa-hourglass-star';
+		return 'eicon-counter-circle';
 	}
 
 	/**
@@ -92,17 +92,17 @@ class Finance_Counter_Section extends Widget_Base {
         $this->add_control(
 			'counter_text',
 			[
-				'label' => __( 'Counter Title', 'elementor' ),
+				'label' => __( 'Counter Title', 'finance-toolkit' ),
 				'type' => Controls_Manager::TEXT,				
-				'default' => __( 'Cool Number', 'elementor' ),
-				'placeholder' => __( 'Cool Number', 'elementor' ),
+				'default' => __( 'Cool Number', 'finance-toolkit' ),
+				'placeholder' => __( 'Cool Number', 'finance-toolkit' ),
 			]
 		);
         
         $this->add_control(
 			'counter_number',
 			[
-				'label' => __( 'Counter Number', 'elementor' ),
+				'label' => __( 'Counter Number', 'finance-toolkit' ),
 				'type' => Controls_Manager::NUMBER,                
 				'default' => 0,
 			]
@@ -111,7 +111,7 @@ class Finance_Counter_Section extends Widget_Base {
         $this->add_control(
 			'counter_icon',
 			[
-				'label' => __( 'Icon', 'elementor' ),
+				'label' => __( 'Icon', 'finance-toolkit' ),
 				'type' => Controls_Manager::ICON,
 				'default' => 'fa fa-star',
 			]
@@ -120,12 +120,12 @@ class Finance_Counter_Section extends Widget_Base {
 		$this->add_control(
 			'view',
 			[
-				'label' => __( 'View', 'elementor' ),
+				'label' => __( 'View', 'finance-toolkit' ),
 				'type' => Controls_Manager::SELECT,
 				'options' => [
-					'default' => __( 'Default', 'elementor' ),
-					'stacked' => __( 'Stacked', 'elementor' ),
-					'framed' => __( 'Framed', 'elementor' ),
+					'default' => __( 'Default', 'finance-toolkit' ),
+					'stacked' => __( 'Stacked', 'finance-toolkit' ),
+					'framed' => __( 'Framed', 'finance-toolkit' ),
 				],
 				'default' => 'default',
 				'prefix_class' => 'elementor-view-',
@@ -135,11 +135,11 @@ class Finance_Counter_Section extends Widget_Base {
 		$this->add_control(
 			'shape',
 			[
-				'label' => __( 'Shape', 'elementor' ),
+				'label' => __( 'Shape', 'finance-toolkit' ),
 				'type' => Controls_Manager::SELECT,
 				'options' => [
-					'circle' => __( 'Circle', 'elementor' ),
-					'square' => __( 'Square', 'elementor' ),
+					'circle' => __( 'Circle', 'finance-toolkit' ),
+					'square' => __( 'Square', 'finance-toolkit' ),
 				],
 				'default' => 'circle',
 				'condition' => [
@@ -148,40 +148,14 @@ class Finance_Counter_Section extends Widget_Base {
 				'prefix_class' => 'elementor-shape-',
 			]
 		);
-
 		
-		$this->add_responsive_control(
-			'align',
-			[
-				'label' => __( 'Alignment', 'elementor' ),
-				'type' => Controls_Manager::CHOOSE,
-				'options' => [
-					'left' => [
-						'title' => __( 'Left', 'elementor' ),
-						'icon' => 'fa fa-align-left',
-					],
-					'center' => [
-						'title' => __( 'Center', 'elementor' ),
-						'icon' => 'fa fa-align-center',
-					],
-					'right' => [
-						'title' => __( 'Right', 'elementor' ),
-						'icon' => 'fa fa-align-right',
-					],
-				],
-				'default' => 'center',
-				'selectors' => [
-					'{{WRAPPER}} .elementor-icon-wrapper' => 'text-align: {{VALUE}};',
-				],
-			]
-		);
 
 		$this->end_controls_section();
 
 		$this->start_controls_section(
 			'section_number',
 			[
-				'label' => __( 'Number', 'elementor' ),
+				'label' => __( 'Number', 'finance-toolkit' ),
 				'tab' => Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -189,7 +163,7 @@ class Finance_Counter_Section extends Widget_Base {
 		$this->add_control(
 			'number_color',
 			[
-				'label' => __( 'Text Color', 'elementor' ),
+				'label' => __( 'Text Color', 'finance-toolkit' ),
 				'type' => Controls_Manager::COLOR,
 				'scheme' => [
 					'type' => Scheme_Color::get_type(),
@@ -215,7 +189,7 @@ class Finance_Counter_Section extends Widget_Base {
 		$this->start_controls_section(
 			'section_title',
 			[
-				'label' => __( 'Title', 'elementor' ),
+				'label' => __( 'Title', 'finance-toolkit' ),
 				'tab' => Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -223,7 +197,7 @@ class Finance_Counter_Section extends Widget_Base {
 		$this->add_control(
 			'title_color',
 			[
-				'label' => __( 'Text Color', 'elementor' ),
+				'label' => __( 'Text Color', 'finance-toolkit' ),
 				'type' => Controls_Manager::COLOR,
 				'scheme' => [
 					'type' => Scheme_Color::get_type(),
@@ -250,7 +224,7 @@ class Finance_Counter_Section extends Widget_Base {
     $this->start_controls_section(
 			'section_style_icon',
 			[
-				'label' => __( 'Icon', 'elementor' ),
+				'label' => __( 'Icon', 'finance-toolkit' ),
 				'tab' => Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -260,14 +234,14 @@ class Finance_Counter_Section extends Widget_Base {
 		$this->start_controls_tab(
 			'icon_colors_normal',
 			[
-				'label' => __( 'Normal', 'elementor' ),
+				'label' => __( 'Normal', 'finance-toolkit' ),
 			]
 		);
 
 		$this->add_control(
 			'primary_color',
 			[
-				'label' => __( 'Primary Color', 'elementor' ),
+				'label' => __( 'Primary Color', 'finance-toolkit' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -284,7 +258,7 @@ class Finance_Counter_Section extends Widget_Base {
 		$this->add_control(
 			'secondary_color',
 			[
-				'label' => __( 'Secondary Color', 'elementor' ),
+				'label' => __( 'Secondary Color', 'finance-toolkit' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'condition' => [
@@ -302,14 +276,14 @@ class Finance_Counter_Section extends Widget_Base {
 		$this->start_controls_tab(
 			'icon_colors_hover',
 			[
-				'label' => __( 'Hover', 'elementor' ),
+				'label' => __( 'Hover', 'finance-toolkit' ),
 			]
 		);
 
 		$this->add_control(
 			'hover_primary_color',
 			[
-				'label' => __( 'Primary Color', 'elementor' ),
+				'label' => __( 'Primary Color', 'finance-toolkit' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -322,7 +296,7 @@ class Finance_Counter_Section extends Widget_Base {
 		$this->add_control(
 			'hover_secondary_color',
 			[
-				'label' => __( 'Secondary Color', 'elementor' ),
+				'label' => __( 'Secondary Color', 'finance-toolkit' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'condition' => [
@@ -338,7 +312,7 @@ class Finance_Counter_Section extends Widget_Base {
 		$this->add_control(
 			'hover_animation',
 			[
-				'label' => __( 'Hover Animation', 'elementor' ),
+				'label' => __( 'Hover Animation', 'finance-toolkit' ),
 				'type' => Controls_Manager::HOVER_ANIMATION,
 			]
 		);
@@ -350,7 +324,7 @@ class Finance_Counter_Section extends Widget_Base {
 		$this->add_control(
 			'size',
 			[
-				'label' => __( 'Size', 'elementor' ),
+				'label' => __( 'Size', 'finance-toolkit' ),
 				'type' => Controls_Manager::SLIDER,
 				'range' => [
 					'px' => [
@@ -367,7 +341,7 @@ class Finance_Counter_Section extends Widget_Base {
 		$this->add_control(
 			'icon_padding',
 			[
-				'label' => __( 'Padding', 'elementor' ),
+				'label' => __( 'Padding', 'finance-toolkit' ),
 				'type' => Controls_Manager::SLIDER,
 				'selectors' => [
 					'{{WRAPPER}} .elementor-icon' => 'padding: {{SIZE}}{{UNIT}};',
@@ -387,7 +361,7 @@ class Finance_Counter_Section extends Widget_Base {
 		$this->add_control(
 			'rotate',
 			[
-				'label' => __( 'Rotate', 'elementor' ),
+				'label' => __( 'Rotate', 'finance-toolkit' ),
 				'type' => Controls_Manager::SLIDER,
 				'default' => [
 					'size' => 0,
@@ -402,7 +376,7 @@ class Finance_Counter_Section extends Widget_Base {
 		$this->add_control(
 			'border_width',
 			[
-				'label' => __( 'Border Width', 'elementor' ),
+				'label' => __( 'Border Width', 'finance-toolkit' ),
 				'type' => Controls_Manager::DIMENSIONS,
 				'selectors' => [
 					'{{WRAPPER}} .elementor-icon' => 'border-width: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
@@ -416,7 +390,7 @@ class Finance_Counter_Section extends Widget_Base {
 		$this->add_control(
 			'border_radius',
 			[
-				'label' => __( 'Border Radius', 'elementor' ),
+				'label' => __( 'Border Radius', 'finance-toolkit' ),
 				'type' => Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px', '%' ],
 				'selectors' => [

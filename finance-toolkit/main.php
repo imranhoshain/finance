@@ -73,7 +73,7 @@ function finance_fail_load_out_of_date() {
 //Plugin Css And JS
 function finance_toolkit_include_files() {
     wp_enqueue_style('owl-carousel', plugins_url( '/assets/css/owl.carousel.min.css', __FILE__ ) ); 
-    wp_enqueue_style('finance-toolkit', plugins_url( '/assets/css/finance-toolkit.css', __FILE__ ) );
+    wp_enqueue_style('finance-toolkit', plugins_url( '/assets/css/finance-toolkit.css', __FILE__ ) ); 
     wp_enqueue_script('owl-carousel', plugins_url( '/assets/js/owl.carousel.min.js', __FILE__ ), array('jquery'), '2.2.1', 'true' );
     
 }
@@ -111,4 +111,9 @@ include_once ('shortcodes/counter-section-shortcode.php');
  * Implement Find me Addons.
  */
 include_once ('shortcodes/team-section-shortcode.php');
+
+/**
+ * Implement Find me Addons.
+ */
+include_once ('shortcodes/testimonial-slider-shortcode.php');
 

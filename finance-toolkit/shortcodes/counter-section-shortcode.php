@@ -11,12 +11,10 @@ function finance_counter_section_shortcode($atts)
     ), $atts));
     
  
-    $finance_counter_markup = '<div class=" clearfix"> 
-    
+    $finance_counter_markup = '<div class=" clearfix">   
                                     <div class="counter-icon elementor-icon elementor-icon-wrapper">
                                         <i class="'.$counter_icon.'"></i>
-                                    </div>
-                                    
+                                    </div>                                    
                                     <div class="counter-detail">
                                         <h2 class="counter elementor-counter-number-wrapper">'.$counter_number.'</h2>
                                         <p class="elementor-counter-title">'.$counter_text.'</p>

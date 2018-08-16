@@ -7,8 +7,7 @@ function finance_service_section_shortcode($atts)
         'id' => '',        
         'service_section_title' => '',               
         'service_section_sub_title' => '',               
-        'service_name' => '',               
-                      
+        'service_name' => '', 
         'service_section_description' => '',              
     ), $atts));
     

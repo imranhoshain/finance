@@ -1,0 +1,23 @@
+<div class="contact-form">
+    <div class="row">
+        <div class="col-md-6 col-sm-6">
+            [text* your-name placeholder "Name"]
+        </div>
+        <div class="col-md-6 col-sm-6">
+            [email* your-email placeholder "Email"]
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6 col-sm-6">
+            [text* your-phone placeholder "Phone"]
+        </div>
+        <div class="col-md-6 col-sm-6">
+            [text your-subject placeholder "Subject"]
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            [textarea your-message] [submit "Send Now"]
+        </div>
+    </div>
+</div>
