@@ -110,9 +110,9 @@ class Finance_Service_Section extends Widget_Base {
 		$repeater->add_control(
 			'tab_title',
 			[
-				'label' => __( 'Service Name', 'elementor' ),
+				'label' => __( 'Service Name', 'finance-toolkit' ),
 				'type' => Controls_Manager::TEXT,
-				'default' => __( 'Wordpress' , 'elementor' ),
+				'default' => __( 'Wordpress' , 'finance-toolkit' ),
 				'label_block' => true,
 			]
 		);
@@ -120,12 +120,12 @@ class Finance_Service_Section extends Widget_Base {
 		$this->add_control(
 			'service_name',
 			[
-				'label' => __( 'Services Items', 'elementor' ),
+				'label' => __( 'Services Items', 'finance-toolkit' ),
 				'type' => Controls_Manager::REPEATER,
 				'fields' => $repeater->get_controls(),
 				'default' => [
 					[
-						'tab_title' => __( 'Wordpress', 'elementor' ),						
+						'tab_title' => __( 'Wordpress', 'finance-toolkit' ),						
 					],					
 				],
 				'title_field' => '{{{ tab_title }}}',
@@ -135,7 +135,7 @@ class Finance_Service_Section extends Widget_Base {
 		$this->add_control(
 			'view',
 			[
-				'label' => __( 'View', 'elementor' ),
+				'label' => __( 'View', 'finance-toolkit' ),
 				'type' => Controls_Manager::HIDDEN,
 				'default' => 'traditional',
 			]

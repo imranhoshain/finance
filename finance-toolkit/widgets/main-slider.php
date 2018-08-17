@@ -107,7 +107,7 @@ class Finance_Main_slider_Section extends Widget_Base {
       $this->add_control(
 			'category',
 			[
-				'label' => __( 'Select Category', 'elementor' ),
+				'label' => __( 'Select Category', 'finance-toolkit' ),
 				'type' => Controls_Manager::SELECT,				
 				'options' => finance_theme_slider_category()
 			]
@@ -116,7 +116,7 @@ class Finance_Main_slider_Section extends Widget_Base {
         $this->add_control(
 			'pagination',
 			[
-				'label' => __( 'Pagination Option', 'elementor' ),
+				'label' => __( 'Pagination Option', 'finance-toolkit' ),
 				'type' => Controls_Manager::SELECT,
 				'default' => 'false',
 				'options' => [
@@ -130,7 +130,7 @@ class Finance_Main_slider_Section extends Widget_Base {
           $this->add_control(
 			'thumbnails',
 			[
-				'label' => __( 'Thumbnail Option', 'elementor' ),
+				'label' => __( 'Thumbnail Option', 'finance-toolkit' ),
 				'type' => Controls_Manager::SELECT,
 				'default' => 'false',
 				'options' => [
@@ -144,7 +144,7 @@ class Finance_Main_slider_Section extends Widget_Base {
           $this->add_control(
 			'navigation',
 			[
-				'label' => __( 'Slider Navigation', 'elementor' ),
+				'label' => __( 'Slider Navigation', 'finance-toolkit' ),
 				'type' => Controls_Manager::SELECT,
 				'default' => 'false',
 				'options' => [
@@ -158,7 +158,7 @@ class Finance_Main_slider_Section extends Widget_Base {
         $this->add_control(
 			'slider_icon',
 			[
-				'label' => __( 'Slider Bottom Icon', 'elementor' ),
+				'label' => __( 'Slider Bottom Icon', 'finance-toolkit' ),
 				'type' => Controls_Manager::ICON,
 				'label_block' => true,
 				'default' => 'fa fa-cog',

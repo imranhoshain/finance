@@ -21,7 +21,7 @@ function finance_service_section_shortcode($atts)
                     <?php 
                         foreach($service_name as $single_service_name){     
                     ?>
-                <b><?php echo $single_service_name['tab_title'] ?></b>
+                    <b><?php echo $single_service_name['tab_title'] ?></b>
                     
                     <?php } ?>
             </span>

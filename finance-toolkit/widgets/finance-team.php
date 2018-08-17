@@ -58,7 +58,7 @@ class Finance_Team_Section extends Widget_Base {
 	 * @return string Widget icon.
 	 */
 	public function get_icon() {
-		return 'fa fa-hourglass-star';
+		return 'eicon-hypster';
 	}
 
 	/**
@@ -100,7 +100,7 @@ class Finance_Team_Section extends Widget_Base {
         		$this->add_control(
 			'team_member_image',
 			[
-				'label' => __( 'Choose Image', 'elementor' ),
+				'label' => __( 'Choose Image', 'finance-toolkit' ),
 				'type' => Controls_Manager::MEDIA,
 				'dynamic' => [
 					'active' => true,
@@ -123,13 +123,13 @@ class Finance_Team_Section extends Widget_Base {
 		$this->add_control(
 			'team_member_name',
 			[
-				'label' => __( 'Title & Description', 'elementor' ),
+				'label' => __( 'Member Name', 'finance-toolkit' ),
 				'type' => Controls_Manager::TEXT,
 				'dynamic' => [
 					'active' => true,
 				],
-				'default' => __( 'This is the heading', 'elementor' ),
-				'placeholder' => __( 'Enter your title', 'elementor' ),
+				'default' => __( 'Imran Hoshain', 'finance-toolkit' ),
+				'placeholder' => __( 'Enter your name', 'finance-toolkit' ),
 				'label_block' => true,
 			]
 		);
@@ -137,13 +137,13 @@ class Finance_Team_Section extends Widget_Base {
 		$this->add_control(
 			'team_member_position',
 			[
-				'label' => __( 'Title & Description', 'elementor' ),
+				'label' => __( 'Member Position', 'finance-toolkit' ),
 				'type' => Controls_Manager::TEXT,
 				'dynamic' => [
 					'active' => true,
 				],
-				'default' => __( 'This is the heading', 'elementor' ),
-				'placeholder' => __( 'Enter your title', 'elementor' ),
+				'default' => __( 'Web Developer', 'finance-toolkit' ),
+				'placeholder' => __( 'Enter your position', 'finance-toolkit' ),
 				'label_block' => true,
 			]
 		);
@@ -151,7 +151,7 @@ class Finance_Team_Section extends Widget_Base {
 		$this->add_control(
 			'viewimg',
 			[
-				'label' => __( 'View', 'elementor' ),
+				'label' => __( 'View', 'finance-toolkit' ),
 				'type' => Controls_Manager::HIDDEN,
 				'default' => 'traditional',
 			]
@@ -162,7 +162,7 @@ class Finance_Team_Section extends Widget_Base {
         $this->start_controls_section(
 			'section_social_info',
 			[
-				'label' => __( 'Social Icons', 'elementor' ),
+				'label' => __( 'Social Icons', 'finance-toolkit' ),
 			]
 		);
 
@@ -171,7 +171,7 @@ class Finance_Team_Section extends Widget_Base {
 		$repeater->add_control(
 			'social',
 			[
-				'label' => __( 'Icon', 'elementor' ),
+				'label' => __( 'Icon', 'finance-toolkit' ),
 				'type' => Controls_Manager::ICON,
 				'label_block' => true,
 				'default' => 'fa fa-wordpress',
@@ -233,17 +233,17 @@ class Finance_Team_Section extends Widget_Base {
         $repeater->add_control(
 			'social_link',
 			[
-				'label' => __( 'Enter social link', 'plugin-name' ),
+				'label' => __( 'Enter social link', 'finance-toolkit' ),
 				'type' => Controls_Manager::TEXT,
 				'input_type' => 'url',
-				'placeholder' => __( 'https://your-link.com', 'plugin-name' ),
+				'placeholder' => __( 'https://your-link.com', 'finance-toolkit' ),
 			]
 		);
         
 		$this->add_control(
 			'social_icon_list',
 			[
-				'label' => __( 'Social Icons', 'elementor' ),
+				'label' => __( 'Social Icons', 'finance-toolkit' ),
 				'type' => Controls_Manager::REPEATER,
 				'fields' => $repeater->get_controls(),
 				'default' => [
@@ -265,7 +265,7 @@ class Finance_Team_Section extends Widget_Base {
 		$this->add_control(
 			'view',
 			[
-				'label' => __( 'View', 'elementor' ),
+				'label' => __( 'View', 'finance-toolkit' ),
 				'type' => Controls_Manager::HIDDEN,
 				'default' => 'traditional',
 			]
@@ -277,7 +277,7 @@ class Finance_Team_Section extends Widget_Base {
         $this->start_controls_section(
 			'section_style_image',
 			[
-				'label' => __( 'Image', 'elementor' ),
+				'label' => __( 'Image', 'finance-toolkit' ),
 				'tab'   => Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -285,7 +285,7 @@ class Finance_Team_Section extends Widget_Base {
 		$this->add_responsive_control(
 			'image_space',
 			[
-				'label' => __( 'Spacing', 'elementor' ),
+				'label' => __( 'Spacing', 'finance-toolkit' ),
 				'type' => Controls_Manager::SLIDER,
 				'default' => [
 					'size' => 15,
@@ -308,7 +308,7 @@ class Finance_Team_Section extends Widget_Base {
 		$this->add_responsive_control(
 			'image_size',
 			[
-				'label' => __( 'Width', 'elementor' ),
+				'label' => __( 'Width', 'finance-toolkit' ),
 				'type' => Controls_Manager::SLIDER,
 				'default' => [
 					'size' => 30,
@@ -339,7 +339,7 @@ class Finance_Team_Section extends Widget_Base {
 
 		$this->start_controls_tab( 'normal',
 			[
-				'label' => __( 'Normal', 'elementor' ),
+				'label' => __( 'Normal', 'finance-toolkit' ),
 			]
 		);
 
@@ -354,7 +354,7 @@ class Finance_Team_Section extends Widget_Base {
 		$this->add_control(
 			'image_opacity',
 			[
-				'label' => __( 'Opacity', 'elementor' ),
+				'label' => __( 'Opacity', 'finance-toolkit' ),
 				'type' => Controls_Manager::SLIDER,
 				'range' => [
 					'px' => [
@@ -372,7 +372,7 @@ class Finance_Team_Section extends Widget_Base {
 		$this->add_control(
 			'background_hover_transition',
 			[
-				'label' => __( 'Transition Duration', 'elementor' ),
+				'label' => __( 'Transition Duration', 'finance-toolkit' ),
 				'type' => Controls_Manager::SLIDER,
 				'default' => [
 					'size' => 0.3,
@@ -393,7 +393,7 @@ class Finance_Team_Section extends Widget_Base {
 
 		$this->start_controls_tab( 'hover',
 			[
-				'label' => __( 'Hover', 'elementor' ),
+				'label' => __( 'Hover', 'finance-toolkit' ),
 			]
 		);
 
@@ -408,7 +408,7 @@ class Finance_Team_Section extends Widget_Base {
 		$this->add_control(
 			'image_opacity_hover',
 			[
-				'label' => __( 'Opacity', 'elementor' ),
+				'label' => __( 'Opacity', 'finance-toolkit' ),
 				'type' => Controls_Manager::SLIDER,
 				'range' => [
 					'px' => [
@@ -433,7 +433,7 @@ class Finance_Team_Section extends Widget_Base {
 		$this->start_controls_section(
 			'section_style_content',
 			[
-				'label' => __( 'Content', 'elementor' ),
+				'label' => __( 'Content', 'finance-toolkit' ),
 				'tab'   => Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -441,23 +441,23 @@ class Finance_Team_Section extends Widget_Base {
 		$this->add_responsive_control(
 			'text_align',
 			[
-				'label' => __( 'Alignment', 'elementor' ),
+				'label' => __( 'Alignment', 'finance-toolkit' ),
 				'type' => Controls_Manager::CHOOSE,
 				'options' => [
 					'left' => [
-						'title' => __( 'Left', 'elementor' ),
+						'title' => __( 'Left', 'finance-toolkit' ),
 						'icon' => 'fa fa-align-left',
 					],
 					'center' => [
-						'title' => __( 'Center', 'elementor' ),
+						'title' => __( 'Center', 'finance-toolkit' ),
 						'icon' => 'fa fa-align-center',
 					],
 					'right' => [
-						'title' => __( 'Right', 'elementor' ),
+						'title' => __( 'Right', 'finance-toolkit' ),
 						'icon' => 'fa fa-align-right',
 					],
 					'justify' => [
-						'title' => __( 'Justified', 'elementor' ),
+						'title' => __( 'Justified', 'finance-toolkit' ),
 						'icon' => 'fa fa-align-justify',
 					],
 				],
@@ -470,12 +470,12 @@ class Finance_Team_Section extends Widget_Base {
 		$this->add_control(
 			'content_vertical_alignment',
 			[
-				'label' => __( 'Vertical Alignment', 'elementor' ),
+				'label' => __( 'Vertical Alignment', 'finance-toolkit' ),
 				'type' => Controls_Manager::SELECT,
 				'options' => [
-					'top' => __( 'Top', 'elementor' ),
-					'middle' => __( 'Middle', 'elementor' ),
-					'bottom' => __( 'Bottom', 'elementor' ),
+					'top' => __( 'Top', 'finance-toolkit' ),
+					'middle' => __( 'Middle', 'finance-toolkit' ),
+					'bottom' => __( 'Bottom', 'finance-toolkit' ),
 				],
 				'default' => 'top',
 				'prefix_class' => 'elementor-vertical-align-',
@@ -485,7 +485,7 @@ class Finance_Team_Section extends Widget_Base {
 		$this->add_control(
 			'heading_title',
 			[
-				'label' => __( 'Title', 'elementor' ),
+				'label' => __( 'Title', 'finance-toolkit' ),
 				'type' => Controls_Manager::HEADING,
 				'separator' => 'before',
 			]
@@ -494,7 +494,7 @@ class Finance_Team_Section extends Widget_Base {
 		$this->add_responsive_control(
 			'title_bottom_space',
 			[
-				'label' => __( 'Spacing', 'elementor' ),
+				'label' => __( 'Spacing', 'finance-toolkit' ),
 				'type' => Controls_Manager::SLIDER,
 				'range' => [
 					'px' => [
@@ -511,7 +511,7 @@ class Finance_Team_Section extends Widget_Base {
 		$this->add_control(
 			'title_color',
 			[
-				'label' => __( 'Color', 'elementor' ),
+				'label' => __( 'Color', 'finance-toolkit' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -536,7 +536,7 @@ class Finance_Team_Section extends Widget_Base {
 		$this->add_control(
 			'heading_description',
 			[
-				'label' => __( 'Description', 'elementor' ),
+				'label' => __( 'Description', 'finance-toolkit' ),
 				'type' => Controls_Manager::HEADING,
 				'separator' => 'before',
 			]
@@ -545,7 +545,7 @@ class Finance_Team_Section extends Widget_Base {
 		$this->add_control(
 			'description_color',
 			[
-				'label' => __( 'Color', 'elementor' ),
+				'label' => __( 'Color', 'finance-toolkit' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -572,7 +572,7 @@ class Finance_Team_Section extends Widget_Base {
         $this->start_controls_section(
 			'section_social_style',
 			[
-				'label' => __( 'Icon', 'elementor' ),
+				'label' => __( 'Icon', 'finance-toolkit' ),
 				'tab' => Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -580,12 +580,12 @@ class Finance_Team_Section extends Widget_Base {
 		$this->add_control(
 			'icon_color',
 			[
-				'label' => __( 'Color', 'elementor' ),
+				'label' => __( 'Color', 'finance-toolkit' ),
 				'type' => Controls_Manager::SELECT,
 				'default' => 'default',
 				'options' => [
-					'default' => __( 'Official Color', 'elementor' ),
-					'custom' => __( 'Custom', 'elementor' ),
+					'default' => __( 'Official Color', 'finance-toolkit' ),
+					'custom' => __( 'Custom', 'finance-toolkit' ),
 				],
 			]
 		);
@@ -593,7 +593,7 @@ class Finance_Team_Section extends Widget_Base {
 		$this->add_control(
 			'icon_primary_color',
 			[
-				'label' => __( 'Primary Color', 'elementor' ),
+				'label' => __( 'Primary Color', 'finance-toolkit' ),
 				'type' => Controls_Manager::COLOR,
 				'condition' => [
 					'icon_color' => 'custom',
@@ -607,7 +607,7 @@ class Finance_Team_Section extends Widget_Base {
 		$this->add_control(
 			'icon_secondary_color',
 			[
-				'label' => __( 'Secondary Color', 'elementor' ),
+				'label' => __( 'Secondary Color', 'finance-toolkit' ),
 				'type' => Controls_Manager::COLOR,
 				'condition' => [
 					'icon_color' => 'custom',
@@ -621,7 +621,7 @@ class Finance_Team_Section extends Widget_Base {
 		$this->add_responsive_control(
 			'icon_size',
 			[
-				'label' => __( 'Size', 'elementor' ),
+				'label' => __( 'Size', 'finance-toolkit' ),
 				'type' => Controls_Manager::SLIDER,
 				'range' => [
 					'px' => [
@@ -638,7 +638,7 @@ class Finance_Team_Section extends Widget_Base {
 		$this->add_responsive_control(
 			'icon_padding',
 			[
-				'label' => __( 'Padding', 'elementor' ),
+				'label' => __( 'Padding', 'finance-toolkit' ),
 				'type' => Controls_Manager::SLIDER,
 				'selectors' => [
 					'{{WRAPPER}} .elementor-social-icon' => 'padding: {{SIZE}}{{UNIT}};',
@@ -666,7 +666,7 @@ class Finance_Team_Section extends Widget_Base {
 		$this->add_responsive_control(
 			'icon_spacing',
 			[
-				'label' => __( 'Spacing', 'elementor' ),
+				'label' => __( 'Spacing', 'finance-toolkit' ),
 				'type' => Controls_Manager::SLIDER,
 				'range' => [
 					'px' => [
@@ -692,7 +692,7 @@ class Finance_Team_Section extends Widget_Base {
 		$this->add_control(
 			'border_radius',
 			[
-				'label' => __( 'Border Radius', 'elementor' ),
+				'label' => __( 'Border Radius', 'finance-toolkit' ),
 				'type' => Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px', '%' ],
 				'selectors' => [
@@ -706,7 +706,7 @@ class Finance_Team_Section extends Widget_Base {
 		$this->start_controls_section(
 			'section_social_hover',
 			[
-				'label' => __( 'Icon Hover', 'elementor' ),
+				'label' => __( 'Icon Hover', 'finance-toolkit' ),
 				'tab' => Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -714,7 +714,7 @@ class Finance_Team_Section extends Widget_Base {
 		$this->add_control(
 			'hover_primary_color',
 			[
-				'label' => __( 'Primary Color', 'elementor' ),
+				'label' => __( 'Primary Color', 'finance-toolkit' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'condition' => [
@@ -729,7 +729,7 @@ class Finance_Team_Section extends Widget_Base {
 		$this->add_control(
 			'hover_secondary_color',
 			[
-				'label' => __( 'Secondary Color', 'elementor' ),
+				'label' => __( 'Secondary Color', 'finance-toolkit' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'condition' => [
@@ -744,7 +744,7 @@ class Finance_Team_Section extends Widget_Base {
 		$this->add_control(
 			'hover_border_color',
 			[
-				'label' => __( 'Border Color', 'elementor' ),
+				'label' => __( 'Border Color', 'finance-toolkit' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'condition' => [
@@ -759,7 +759,7 @@ class Finance_Team_Section extends Widget_Base {
 		$this->add_control(
 			'hover_animation',
 			[
-				'label' => __( 'Hover Animation', 'elementor' ),
+				'label' => __( 'Hover Animation', 'finance-toolkit' ),
 				'type' => Controls_Manager::HOVER_ANIMATION,
 			]
 		);

@@ -19,7 +19,6 @@ function finance_testi_slide_taxonomy() {
 }
 add_action( 'init', 'finance_testi_slide_taxonomy');
 
-
 //Custom Taxonomy OR Catagory Function
 function finance_testi_slider_category(){
     $slide_categories = get_terms('testi_cat'); //Enter category Name

@@ -89,7 +89,7 @@ class Finance_Testimonial_Section extends Widget_Base {
         $this->add_control(
 			'count',
 			[
-				'label' => esc_html_x("Heading Text", 'Admin Panel','finance-toolkit'),
+				'label' => esc_html_x("Select Post Count", 'Admin Panel','finance-toolkit'),
 				'type' => Controls_Manager::NUMBER,
 				'default' => esc_html_x("2", 'Admin Panel','finance-toolkit'),			
 			]
@@ -98,7 +98,7 @@ class Finance_Testimonial_Section extends Widget_Base {
       $this->add_control(
 			'category',
 			[
-				'label' => __( 'Select Category', 'elementor' ),
+				'label' => __( 'Select Category', 'finance-toolkit' ),
 				'type' => Controls_Manager::SELECT,				
 				'options' => finance_testi_slider_category()
 			]
@@ -107,7 +107,7 @@ class Finance_Testimonial_Section extends Widget_Base {
         $this->add_control(
 			'loop',
 			[
-				'label' => __( 'Slider Loop', 'elementor' ),
+				'label' => __( 'Slider Loop', 'finance-toolkit' ),
 				'type' => Controls_Manager::SELECT,
 				'default' => 'true',
 				'options' => [
@@ -121,7 +121,7 @@ class Finance_Testimonial_Section extends Widget_Base {
           $this->add_control(
 			'dot',
 			[
-				'label' => __( 'Slider Dots', 'elementor' ),
+				'label' => __( 'Slider Dots', 'finance-toolkit' ),
 				'type' => Controls_Manager::SELECT,
 				'default' => 'true',
 				'options' => [
@@ -135,7 +135,7 @@ class Finance_Testimonial_Section extends Widget_Base {
           $this->add_control(
 			'nav',
 			[
-				'label' => __( 'Slider Loop', 'elementor' ),
+				'label' => __( 'Slider Nav', 'finance-toolkit' ),
 				'type' => Controls_Manager::SELECT,
 				'default' => 'true',
 				'options' => [
@@ -150,7 +150,7 @@ class Finance_Testimonial_Section extends Widget_Base {
          $this->add_control(
 			'autoplay',
 			[
-				'label' => __( 'Slider Loop', 'elementor' ),
+				'label' => __( 'Slider Autoplay', 'finance-toolkit' ),
 				'type' => Controls_Manager::SELECT,
 				'default' => 'true',
 				'options' => [
@@ -165,7 +165,7 @@ class Finance_Testimonial_Section extends Widget_Base {
         $this->add_control(
             'autoplayTimeout',
             [
-                'label' => esc_html_x("Heading Text", 'Admin Panel','finance-toolkit'),
+                'label' => esc_html_x("Slider Timeout", 'Admin Panel','finance-toolkit'),
                 'type' => Controls_Manager::NUMBER,
                 'default' => esc_html_x("5000", 'Admin Panel','finance-toolkit'),			
             ]

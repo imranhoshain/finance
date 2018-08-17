@@ -1,7 +1,7 @@
 <?php
 /*
 Plugin Name: Finance Toolkit
-Plugin URI: http://wordpress.org/plugins/finance/
+Plugin URI: http://imranhoshain.com/plugins/finance/
 Description: This is not just a plugin, This plugin for finance theme.
 Author: spytoever
 Version: 1.0

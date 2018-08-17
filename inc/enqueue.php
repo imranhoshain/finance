@@ -4,7 +4,6 @@
  */
 function finance_scripts() {
 
-
 // Add custom fonts, used in the main stylesheet.
 	wp_enqueue_style( 'bootstrap-min', get_template_directory_uri().'/assets/css/bootstrap.min.css', array(), '3.3.7', 'all' );
 	wp_enqueue_style( 'normalize', get_template_directory_uri().'/assets/css/normalize.css', array(), '7.0.0', 'all' );
@@ -37,10 +36,7 @@ function finance_scripts() {
 	//sticky js
     wp_enqueue_script( 'jquery.sticky', get_template_directory_uri().'/assets/js/jquery.sticky.js', array('jquery'), '1.0.4', true );	
 	//Isotop js
-    wp_enqueue_script( 'isotope-min', get_template_directory_uri().'/assets/js/isotope.min.js', array('jquery'), '3.0.1', true );
-	//Google map js
-    //wp_enqueue_script( 'googlemap', get_template_directory_uri().'/assets/js/googlemap.js', array('jquery'), '1.0', true );	
-	//main js    
+    wp_enqueue_script( 'isotope-min', get_template_directory_uri().'/assets/js/isotope.min.js', array('jquery'), '3.0.1', true );	  
 	wp_enqueue_script( 'main', get_template_directory_uri().'/assets/js/main.js', array('jquery'), '1.0', true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
