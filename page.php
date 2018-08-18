@@ -48,16 +48,15 @@ get_header();
 
 <?php if($enable_title == true) : ?> 
 
-<div class="finance-page-title section-padding">
-	<div class="page-banner">
-		<img src="<?php the_post_thumbnail_url('large') ?>" alt="Page Banner">		
+<div style="background-image: url(<?php the_post_thumbnail_url('large') ?>);" class="finance-page-title-area section-padding">
+	<div class="page-banner">			
 		<div class="container">
 			<div class="row ">
 				<div class="col-md-12 text-<?php echo $text_title_direction; ?>">
 					<?php if(empty($custom_title)) : ?>
 					<h2><?php the_title(); ?></h2>
 					<?php else : ?>
-					<div class="rideo-page-custom-title">
+					<div class="finance-page-custom-title">
 						<?php echo wpautop($custom_title); ?>
 					</div>
 					<?php endif; ?>					
@@ -72,15 +71,21 @@ get_header();
 
 <?php while ( have_posts() ) : the_post(); ?>
 	<div id="primary" class="content-area">
-		<main id="main" class="site-main">			
-					<?php
-						get_template_part( 'template-parts/content', 'page' );
+		<main id="main" class="site-main">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">			
+						<?php
+							get_template_part( 'template-parts/content', 'page' );
 
-						// If comments are open or we have at least one comment, load up the comment template.
-						if ( comments_open() || get_comments_number() ) :
-							comments_template();
-						endif;					
-					?>				
+							// If comments are open or we have at least one comment, load up the comment template.
+							if ( comments_open() || get_comments_number() ) :
+								comments_template();
+							endif;					
+						?>	
+					</div>
+				</div>
+			</div>			
 		</main><!-- #main -->
 	</div><!-- #primary -->
 <?php endwhile; // End of the loop.?>

@@ -932,9 +932,6 @@ a.common_btn i {
     margin-top: 30px
 }
 
-
-
-
 .blog-area .owl-nav div {
     color: #fff;
     display: inline-block;
@@ -949,6 +946,417 @@ a.common_btn i {
 
 .blog-area .owl-nav div:hover {
     border-radius: 50%
+}
+
+.finance-page-title-area {
+    background:  #333;
+}
+
+.finance-page-title-area h2 {
+    color: #cacaca;
+}
+
+.widget_categories .sidebar-title, .widget_categories form {
+    display: inline-block;
+}
+
+.widget_categories .sidebar-title{
+    margin-right: 5px;
+}
+
+.entry-meta {
+    margin-bottom: 20px;
+}
+
+.entry-meta > span,
+.entry-footer > span {
+    padding-right: 15px;
+}
+
+.entry-content > p {
+    font-size: 15px;
+    line-height: 25px;
+    margin-top: 15px;
+}
+
+.blog-bexed-btn {
+    background: #f5ab35 none repeat scroll 0 0;
+    border-radius: 6px;
+    color: #fff;
+    display: inline-block;
+    font-size: 16px;
+    padding: 6px 12px;
+}
+
+.finance-article-list > article,
+.widget-area .widget {
+    border: 1px solid #fff;
+    -webkit-box-shadow: 3px 5px 20px #ddd;
+    box-shadow: 3px 2px 3px #ddd;
+    margin-bottom: 50px;
+    padding: 20px;
+    background: #fff;
+}
+
+.finance-article-list {
+    padding-right: 40px;
+}
+
+.finance-article-list > article h2,
+.widget-area .widget h2 {
+    font-size: 25px;
+    margin-bottom: 10px;
+    color: #333;
+}
+.post-body{
+    background: #efefef;
+}
+.entry-meta {
+    margin-bottom: 20px;
+}
+
+.entry-meta > span,
+.entry-footer > span {
+    padding-right: 15px;
+}
+
+.finance-feature-content {
+    margin-bottom: 25px;
+}
+
+.widget-area ul {
+    list-style: outside none none;
+    margin: 0;
+    padding: 0;
+}
+
+.widget-area li {
+    display: block;
+    line-height: 34px;
+}
+
+.widget-area li a {
+    color: #333;
+    font-size: 14px;
+    padding-left: 10px;
+}
+
+.calendar_wrap #wp-calendar {
+    width: 100%;
+}
+
+.calendar_wrap table {
+    width: 100%;
+    border-left: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+
+.calendar_wrap table th {
+    background-color: #ddd;
+}
+
+.calendar_wrap table th,
+.calendar_wrap table td {
+    border-right: 1px solid #ddd;
+    border-top: 1px solid #ddd;
+    padding: 10px;
+}
+
+.finance-article-list .entry-title a {
+    color: #333;
+}
+
+input[type="search"] {
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    padding: 9px;
+}
+
+.search-form input[type=submit] {
+    color: #fff;
+    background-color: #f5ab35;
+    font-size: 13px;
+    font-weight: 400;
+    padding: 12px 13px;
+    text-transform: uppercase;    
+    border-radius: 3px;
+    border: none;
+    transition: all 0.4s ease 0s
+}
+
+.search-form input[type=submit]:hover {
+    background-color: #333
+}
+
+.widget select { 
+    padding: 10px;
+}
+
+.widget select option {
+    border: 1px solid#ddd;
+    font-size: 16px;
+    padding: 10px;
+}
+
+.pagination-link a {
+    background: #f5ab35 none repeat scroll 0 0;
+    color: #fff;
+    font-size: 16px;
+    padding: 8px 12px;
+}
+
+.pagination-link a span.current {
+    background: #ddd none repeat scroll 0 0;
+}
+
+.pagination-link .page-numbers.current {
+    background: #1e3c5a none repeat scroll 0 0;
+    color: #fff;
+    padding: 8px 12px;
+    font-size: 16px;
+}
+
+.entry-meta ul li .byline,
+.entry-meta ul li .cat-links,
+.entry-meta ul li .comments-link,
+.entry-meta ul li .posted-on {
+    margin-right: 20px;
+}
+
+.nav-links {
+    margin-top: 20px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.nav-previous {
+    float: left;
+    width: 50%;
+}
+
+.nav-next {
+    float: right;
+}
+
+.nav-links a {
+    background: #E75142 none repeat scroll 0 0;
+    color: #fff;
+    display: inline-block;
+    font-weight: 600;
+    padding: 8px;
+}
+
+.page-links a {
+    border: 1px solid #E75142;
+    display: inline-block;
+    padding: 2px 10px;
+}
+
+.entry-meta ul li .fa {
+    color: #f5ab35;
+    margin-right: 5px;
+}
+
+.entry-meta ul li a {
+    color: #333;
+    font-size: 15px;
+}
+
+a.blog-bexed-btn {
+    color: #fff;
+}
+
+/*---------------------------------------------------
+            Comments area css
+---------------------------------------------------*/
+
+.comments-area {
+    margin-top: 30px;
+}
+
+.comment-item {
+    border-bottom: 1px solid #eef1f4;
+    margin-bottom: 30px;
+    padding-bottom: 25px;
+}
+
+.comment-item:last-child {
+    border-bottom: none;
+}
+
+.comment-title {
+    margin: 0 0 30px;
+}
+
+.comment-metadata {}
+
+.comment-metadata h4 {
+    text-transform: capitalize;
+    margin: 0
+}
+
+
+.comment-form-title {
+    margin: 0 0 30px;
+}
+
+.comment-form-wrap .form-control {
+    border: 1px solid #ddd;
+    border-radius: 0;
+    color: #666;
+    height: 44px;
+    line-height: 24px;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+.comment-form-wrap textarea {
+    resize: none;
+}
+
+.comment-form-wrap input[type="submit"], .comment-form input[type="submit"] {
+    border: medium none;
+    font-size: 14px;
+    padding: 10px 30px;
+    color: #fff;
+    background: #f5ab35;
+    text-transform: capitalize;
+    position: relative;
+    transition: all 0.4s ease 0s
+}
+
+.comment-form-wrap input[type="submit"]:hover,
+.comment-form input[type="submit"]:hover {
+    background-color: #333;
+}
+
+.blog-right {}
+
+.blog-search {
+    margin-bottom: 40px;
+}
+
+.blog-search .form-control {
+    width: calc(100% - 80px);
+    border-radius: 0;
+    padding: 10px 20px;
+    float: left;
+    height: 44px;
+    font-size: 14px;
+    border-color: #ddd;
+}
+
+.blog-search input[type="submit"] {
+    border: medium none;
+    color: #fff;
+    font-weight: 500;
+    height: 44px;
+    text-align: center;
+    text-transform: capitalize;
+    width: 80px;
+}
+
+.single-right-blog-widget {
+    margin-bottom: 70px;
+}
+
+.blog-widget-title {
+    font-size: 22px;
+    margin: 0 0 20px;
+}
+
+.single-right-blog-widget ul {}
+
+.single-right-blog-widget ul li {}
+
+.single-right-blog-widget ul li a {
+    color: #333;
+    display: block;
+    font-size: 16px;
+    position: relative;
+    text-transform: capitalize;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+    margin-bottom: 10px
+}
+
+.single-right-blog-widget ul li a span {
+    color: #666;
+    display: block;
+    font-weight: 300
+}
+
+.tag-area {}
+
+.tag-area ul {}
+
+.tag-area ul li {
+    display: inline;
+}
+
+.tag-area ul li a {
+    display: inline-block;
+    background-color: #EFEFEF;
+    margin-right: 6px;
+    margin-bottom: 10px;
+    padding: 10px;
+    color: #333;
+    text-transform: capitalize;
+    font-size: 14px;
+}
+
+.comment-form textarea {
+    width: 100%;
+    border: 1px solid#ddd;
+}
+
+.comment-form input[type="submit"] {
+    width: auto;
+}
+
+.comments-title {
+    font-size: 20px;
+    margin-bottom: 30px;
+    margin-top: 50px;
+}
+
+.comment-list {
+    list-style: outside none none;
+    margin: 0;
+    padding: 0;
+}
+
+.comment-list li.comment {
+    margin-bottom: 30px;
+}
+.comments-content ul.comment-list li{
+    padding: 30px 35px;
+    background: #fff;
+    list-style: none;
+    margin-bottom: 10px;    
+    border-radius: 4px;
+}
+ol .children li {
+    margin-top: 20px;
+}
+
+.comment-replay .comment-reply-link {
+    background: #f5ab35;
+    color: #fff;
+    display: inline-block;
+    padding: 5px 12px;
+}
+
+.comment-reply-link:hover{
+    background: #333 none repeat scroll 0 0;
+}
+
+.comment-list a {
+    color: #333;
+}
+
+.comment-metadata {
+    font-size: 80%;
 }
 
 /*---------------------------------------------------
@@ -1068,139 +1476,52 @@ a.common_btn i {
 
 
 /*---------------------------------------------------
-            Comments area css
+            Last Update css
 ---------------------------------------------------*/
 
-.comments-area {
-    margin-top: 30px;
-}
 
-.comment-item {
-    border-bottom: 1px solid #eef1f4;
-    margin-bottom: 30px;
-    padding-bottom: 25px;
-}
-
-.comment-item:last-child {
-    border-bottom: none;
-}
-
-.comment-title {
-    margin: 0 0 30px;
-}
-
-.comment-metadata {}
-
-.comment-metadata h4 {
-    text-transform: capitalize;
-    margin: 0
-}
-
-.comment-reply-link {}
-
-.comment-form-title {
-    margin: 0 0 30px;
-}
-
-.comment-form-wrap .form-control {
-    border: 1px solid #ddd;
-    border-radius: 0;
-    color: #666;
-    height: 44px;
-    line-height: 24px;
-    margin-bottom: 20px;
-    padding: 10px;
-}
-
-.comment-form-wrap textarea {
-    resize: none;
-}
-
-.comment-form-wrap input[type="submit"] {
-    border: medium none;
-    font-size: 14px;
-    padding: 10px 30px;
-    color: #fff;
-    text-transform: capitalize;
+.finance-page-title-area {
+    background-position: center center;
+    background-size: cover;
+    font-size: 16px;    
     position: relative;
-    transition: all 0.4s ease 0s
+    
 }
 
-.comment-form-wrap input[type="submit"]:hover {
-    background-color: #333;
+.finance-page-title-area::before {
+    background: #000 none repeat scroll 0 0;
+    content: "";
+    height: 100%;
+    opacity: 0.4;
+    position: absolute;
+    top: 0;
+    width: 100%;
 }
 
-.blog-right {}
-
-.blog-search {
-    margin-bottom: 40px;
-}
-
-.blog-search .form-control {
-    width: calc(100% - 80px);
-    border-radius: 0;
-    padding: 10px 20px;
-    float: left;
-    height: 44px;
-    font-size: 14px;
-    border-color: #ddd;
-}
-
-.blog-search input[type="submit"] {
-    border: medium none;
-    color: #fff;
-    font-weight: 500;
-    height: 44px;
-    text-align: center;
-    text-transform: capitalize;
-    width: 80px;
-}
-
-.single-right-blog-widget {
-    margin-bottom: 70px;
-}
-
-.blog-widget-title {
-    font-size: 22px;
-    margin: 0 0 20px;
-}
-
-.single-right-blog-widget ul {}
-
-.single-right-blog-widget ul li {}
-
-.single-right-blog-widget ul li a {
-    color: #333;
-    display: block;
-    font-size: 16px;
-    position: relative;
-    text-transform: capitalize;
-    border-bottom: 1px solid #ddd;
-    padding-bottom: 10px;
-    margin-bottom: 10px
-}
-
-.single-right-blog-widget ul li a span {
-    color: #666;
-    display: block;
-    font-weight: 300
-}
-
-.tag-area {}
-
-.tag-area ul {}
-
-.tag-area ul li {
-    display: inline;
-}
-
-.tag-area ul li a {
-    display: inline-block;
-    background-color: #EFEFEF;
-    margin-right: 6px;
+input[type="url"],input[type="text"], input[type="email"]{
+    background: #fff none repeat scroll 0 0;
+    border: 1px solid #fff;
+    height: 50px;
     margin-bottom: 10px;
-    padding: 10px;
-    color: #333;
-    text-transform: capitalize;
+    outline: medium none;
+    padding-left: 10px;
+    width: 100%;
+}
+
+.comment-srction .comment-avatar {
+    float: left;
+    margin-right: 30px;
+}
+
+.comment-srction .comment-info{
+    overflow: hidden;
+}
+
+
+.comment-info cite.fn {
+    text-transform: uppercase;
+    font-style: normal;
     font-size: 14px;
+    font-weight: 800;
+    margin-right: 5px;
 }

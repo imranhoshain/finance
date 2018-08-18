@@ -125,7 +125,115 @@ function finance_cs_framework_options($options)
             )
         )
     );
+
+    //All page option meta    
+    $options[] = array(
+        'id' => 'finance_page_meta',
+        'title' => 'Page Options',
+        'post_type' => 'page',
+        'context' => 'normal',
+        'priority' => 'default',
+        'sections' => array(
+            array(
+                'name' => 'finance_page_metabox',
+                'title' => 'Page Options',
+                'fields' => array(
+                    // begin: a field
+                    array(
+                        'id' => 'enable_title',
+                        'type' => 'switcher',
+                        'title' => 'Enable Page Title',
+                        'default' => 'false'
+                    ),
+                    // end: a field  
+                    array(
+                        'id' => 'custom_title',
+                        'type' => 'textarea',
+                        'title' => 'Add Page custom Title',
+                        'dependency' => array(
+                            'enable_title',
+                            '==',
+                            'true'
+                        )
+                    ),
+                    // end: a field
+                    array(
+                        'id' => 'text_title_direction',
+                        'type' => 'select',
+                        'title' => 'Select Text Align',
+                        'options' => array(
+                            'center' => 'Center',
+                            'left' => 'Left',
+                            'right' => 'Right'
+                        ),
+                        'default' => 'center',
+                        'dependency' => array(
+                            'enable_title',
+                            '==',
+                            'true'
+                        )
+                    ),
+                    // end: a field                         
+                    
+                )
+            )
+        )
+    );
     
+    //All page option meta    
+    $options[] = array(
+        'id' => 'finance_post_meta',
+        'title' => 'Post Options',
+        'post_type' => 'post',
+        'context' => 'normal',
+        'priority' => 'default',
+        'sections' => array(
+            array(
+                'name' => 'finance_post_metabox',
+                'title' => 'Post Options',
+                'fields' => array(
+                    // begin: a field
+                    array(
+                        'id' => 'enable_title',
+                        'type' => 'switcher',
+                        'title' => 'Enable Post Title',
+                        'default' => 'false'
+                    ),
+                    // end: a field  
+                    array(
+                        'id' => 'custom_title',
+                        'type' => 'textarea',
+                        'title' => 'Add Post custom Title',
+                        'dependency' => array(
+                            'enable_title',
+                            '==',
+                            'true'
+                        )
+                    ),
+                    // end: a field
+                    array(
+                        'id' => 'text_title_direction',
+                        'type' => 'select',
+                        'title' => 'Select Text Align',
+                        'options' => array(
+                            'center' => 'Center',
+                            'left' => 'Left',
+                            'right' => 'Right'
+                        ),
+                        'default' => 'center',
+                        'dependency' => array(
+                            'enable_title',
+                            '==',
+                            'true'
+                        )
+                    ),
+                    // end: a field                         
+                    
+                )
+            )
+        )
+    );
+ 
     return $options;
     
 }

@@ -20,7 +20,7 @@ if ( post_password_required() ) {
 }
 ?>
 
-<div id="comments" class="comments-area">
+<div id="comments" class="comments-area comments-content">
 
 	<?php
 	// You can start editing here -- including this comment!
@@ -48,17 +48,22 @@ if ( post_password_required() ) {
 
 		<?php the_comments_navigation(); ?>
 
-		<ol class="comment-list">
+		<ul class="comment-list">
 			<?php
 			wp_list_comments( array(
-				'style'      => 'ol',
+				'avatar_size' => 70,
+				'style'       => 'ul',
+				'callback'    => 'finance_comment',
 				'short_ping' => true,
 			) );
 			?>
-		</ol><!-- .comment-list -->
+		</ul><!-- .comment-list -->
 
 		<?php
-		the_comments_navigation();
+		the_comments_pagination( array(
+			'prev_text' => '<span class="screen-reader-text">' . __( 'Previous', 'finance' ) . '</span>',
+			'next_text' => '<span class="screen-reader-text">' . __( 'Next', 'finance' ) . '</span>' ,
+		) );
 
 		// If comments are closed and there are comments, let's leave a little note, shall we?
 		if ( ! comments_open() ) :
@@ -69,7 +74,35 @@ if ( post_password_required() ) {
 
 	endif; // Check for have_comments().
 
-	comment_form();
+	$comments_args = array(
+        // change the title of send button 
+        'label_submit'=>'Submit',
+        // change the title of the reply section
+        'title_reply'=>'LEAVE A REPLY',
+        // remove "Text or HTML to be displayed after the set of comment fields"
+        'comment_form_top' => 'ds',
+        'comment_notes_before' => '',
+        'comment_notes_after' => '',
+        // redefine your own textarea (the comment body)
+        
+        'fields' => apply_filters( 'comment_form_default_fields', array(
+
+    'author' =>
+      '<p class="comment-form-author">'  .
+      '<input id="author" class="blog-form-input" placeholder="Your Name* " name="author" type="text" value="' . esc_attr( $commenter['comment_author'] ) .
+      '" size="30"/></p>',
+
+    'email' =>
+      '<p class="comment-form-email">'.
+      '<input id="email" class="blog-form-input" placeholder="Your Email Address* " name="email" type="text" value="' . esc_attr(  $commenter['comment_author_email'] ) .
+      '" size="30"/></p>',
+      'comment_field' => '<p class="comment-form-comment"><textarea id="comment" cols="40" name="comment" placeholder="Your Comment* " aria-required="true"></textarea></p>',
+          
+    )
+  ),
+);
+
+$comments_args;
 	?>
 
 </div><!-- #comments -->

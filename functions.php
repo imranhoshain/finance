@@ -122,6 +122,16 @@ include_once (get_template_directory() . '/inc/enqueue.php');
 include_once (get_template_directory().'/inc/navwalker.php');
 
 /**
+ * Implement the Custom Widget feature.
+ */
+include_once (get_template_directory() . '/inc/custom-widgets.php');
+
+/**
+ * Implement the Custom Widget feature.
+ */
+include_once(get_template_directory().'/inc/custom-comments.php');
+
+/**
  * Themeoptions and metabox functions.
  */
 include_once (get_template_directory().'/inc/theme-metabox-and-options.php');

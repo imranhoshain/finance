@@ -10,10 +10,6 @@
 get_header();
 ?>
 <!-- 404 content section start -->
-<div class="error-header">
-
-</div>
-
 <div class="error-content section-padding">
 	<div class="container">
 		<div class="row">
