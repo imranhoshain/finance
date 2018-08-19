@@ -8,7 +8,6 @@
  *
  * @package finance
  */
-
 ?>
 
 	</div><!-- #content -->
@@ -29,7 +28,6 @@
                     <div class="footer-text">                    	
                         <p><?php echo $company_info_title; ?> <a href="<?php echo $company_info_link; ?>"><?php echo $company_info_link_text; ?></a></p>                        
                         <p><?php echo $footer_copyright_text; ?></p>
-
                         <?php if(!empty($footer_social_icon_array)) : ?>
                         <div class="footer-social-links">
                         	<?php foreach ($footer_social_icon_array as $footer_social_icon ) :

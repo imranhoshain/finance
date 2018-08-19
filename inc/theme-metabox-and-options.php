@@ -327,6 +327,59 @@ function finance_cs_theme_options($options)
         )
     );
     //End header acordian option
+//Blog Option Start
+$options[] = array(
+        'name' => 'finance_blog_options',
+        'title' => 'Blog Options',
+        'icon' => 'fa fa-heart',
+        'fields' => array(
+            array(
+                'id' => 'enable_post_by',
+                'type' => 'switcher',
+                'title' => 'Display Posted By',
+                'default' => true
+            ),
+            array(
+                'id' => 'enable_posted_on',
+                'type' => 'switcher',
+                'title' => 'Display Posted On',
+                'default' => true
+            ),
+            array(
+                'id' => 'enable_post_category',
+                'type' => 'switcher',
+                'title' => 'Display Posted category',
+                'default' => true
+            ), 
+            array(
+                'id' => 'enable_post_tag',
+                'type' => 'switcher',
+                'title' => 'Display Posted Tag',
+                'default' => true
+            ),
+            array(
+                'id' => 'enable_single_post_pagination',
+                'type' => 'switcher',
+                'title' => 'Display Single Post Pagination',
+                'default' => true
+            ),
+
+            array(
+              'id'             => 'blog_page',
+              'type'           => 'select',
+              'title'          => 'Select Field',
+              'options'        => array(
+                'left'         => 'Blog Left',
+                'right'        => 'Blog Right',
+                'full_width'   => 'Blog Full Width',
+              ),
+              'default_option' => 'Select your style',
+            ),
+        )
+        
+    );
+
+//Blog Option End
     
     
     //Add acording option

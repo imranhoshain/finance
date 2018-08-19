@@ -96,7 +96,7 @@ if ( ! function_exists( 'post_pagination' ) ) :
      the_posts_pagination( array(
     'mid_size' => 2,
     'prev_text' => __( '&laquo;', 'finance' ),
-    'next_text' => __( '&raquo', 'finance' ),
+    'next_text' => __( '&raquo;', 'finance' ),
 ) );
    }
 endif;
@@ -127,7 +127,7 @@ include_once (get_template_directory().'/inc/navwalker.php');
 include_once (get_template_directory() . '/inc/custom-widgets.php');
 
 /**
- * Implement the Custom Widget feature.
+ * Implement the Custom comment field.
  */
 include_once(get_template_directory().'/inc/custom-comments.php');
 

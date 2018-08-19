@@ -12,8 +12,7 @@ if ( ! is_active_sidebar( 'blog_right_sidebar' ) ) {
 }
 ?>
 
-<div class="col-md-4">
-    <aside id="secondary" class="widget-area">
-	    <?php dynamic_sidebar( 'blog_right_sidebar' ); ?>
-    </aside><!-- #secondary -->
-</div>
+<aside id="secondary" class="widget-area">
+    <?php dynamic_sidebar( 'blog_right_sidebar' ); ?>
+</aside><!-- #secondary -->
+
