@@ -12,7 +12,7 @@ function finance_theme_custom_post()
             'singular_name' => 'slide'
         ),
         'public' => false,
-        'menu_icon' => 'dashicons-images-alt',
+        'menu_icon' => 'dashicons-slides',
         'show_ui' => true,
         'supports' => array(
             'title',
@@ -53,7 +53,7 @@ function finance_theme_custom_post()
             'singular_name' => 'testimonial'
         ),
         'public' => true,
-        'menu_icon' => 'dashicons-images-alt',
+        'menu_icon' => 'dashicons-admin-comments',
         'show_ui' => true,
         'supports' => array(
             'title',
