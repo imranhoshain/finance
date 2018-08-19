@@ -358,6 +358,12 @@ $options[] = array(
                 'default' => true
             ),
             array(
+                'id' => 'enable_comment_option',
+                'type' => 'switcher',
+                'title' => 'Display Comment Option',
+                'default' => true
+            ),
+            array(
                 'id' => 'enable_single_post_pagination',
                 'type' => 'switcher',
                 'title' => 'Display Single Post Pagination',

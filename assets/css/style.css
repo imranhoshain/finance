@@ -964,9 +964,6 @@ a.common_btn i {
     margin-right: 5px;
 }
 
-.entry-meta {
-    margin-bottom: 20px;
-}
 
 .entry-meta > span,
 .entry-footer > span {
@@ -1011,9 +1008,7 @@ a.common_btn i {
 .post-body{
     background: #efefef;
 }
-.entry-meta {
-    margin-bottom: 20px;
-}
+
 
 .entry-meta > span,
 .entry-footer > span {
@@ -1118,9 +1113,10 @@ input[type="search"] {
 
 .entry-meta ul li .byline,
 .entry-meta ul li .cat-links,
+.entry-meta ul li .tags-links,
 .entry-meta ul li .comments-link,
 .entry-meta ul li .posted-on {
-    margin-right: 20px;
+    margin-right: 15px;
 }
 
 .nav-links {
@@ -1537,10 +1533,31 @@ input[type="url"],input[type="text"], input[type="email"]{
     padding: 11px;
     font-weight: 700;
     color: #000;
+    border: 1px solid#ddd;
 }
 
 .entry-content > p.read-more-warp {
     font-size: 15px;
     line-height: 25px;
     margin: 18px 0;
+}
+
+.single-blog-meta-tag .entry-meta {
+    margin: 12px 0px;
+}
+
+.blog-single-post-title h3.entry-title{
+    font-size: 16px;   
+    line-height: 26px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.blog-single-post-title h3.entry-title a{
+    
+    color: #333;
+}
+
+.blog-single-post-title h3.entry-title a:hover{
+    color: #f5ab35;
 }
