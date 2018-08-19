@@ -95,14 +95,13 @@ if ( post_password_required() ) {
     'email' =>
       '<p class="comment-form-email">'.
       '<input id="email" class="blog-form-input" placeholder="Your Email Address* " name="email" type="text" value="' . esc_attr(  $commenter['comment_author_email'] ) .
-      '" size="30"/></p>',
-      'comment_field' => '<p class="comment-form-comment"><textarea id="comment" cols="40" name="comment" placeholder="Your Comment* " aria-required="true"></textarea></p>',
-          
+      '" size="30"/></p>',      
+     
     )
   ),
 );
 
-$comments_args;
-	?>
+comment_form($comments_args);
+?>
 
 </div><!-- #comments -->

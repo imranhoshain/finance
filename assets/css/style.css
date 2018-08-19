@@ -1308,6 +1308,7 @@ a.blog-bexed-btn {
 .comment-form textarea {
     width: 100%;
     border: 1px solid#ddd;
+    padding: 10px 10px;
 }
 
 .comment-form input[type="submit"] {
