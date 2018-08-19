@@ -60,7 +60,7 @@ get_header();
 
 							endwhile;
 
-							the_posts_navigation();
+							post_pagination();
 
 						else :
 
@@ -134,7 +134,7 @@ get_header();
 
 							endwhile;
 
-							the_posts_navigation();
+							post_pagination();
 
 						else :
 
