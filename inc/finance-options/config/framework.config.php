@@ -7,7 +7,7 @@
 $settings           = array(
   'menu_title'      => 'Theme Options',
   'menu_type'       => 'menu', // menu, submenu, options, theme, etc.
-  'menu_slug'       => 'cs-framework',
+  'menu_slug'       => 'finance',
   'ajax_save'       => false,
   'show_reset_all'  => false,
   'framework_title' => 'Finance Framework <small>by Imran</small>',

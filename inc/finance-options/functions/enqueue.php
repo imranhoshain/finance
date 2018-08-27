@@ -18,7 +18,7 @@ if( ! function_exists( 'cs_admin_enqueue_scripts' ) ) {
     wp_enqueue_style( 'wp-jquery-ui-dialog' );
 
     // framework core styles
-    wp_enqueue_style( 'cs-framework', CS_URI .'/assets/css/cs-framework.css', array(), '1.0.0', 'all' );
+    wp_enqueue_style( 'finance', CS_URI .'/assets/css/cs-framework.css', array(), '1.0.0', 'all' );
     wp_enqueue_style( 'font-awesome', CS_URI .'/assets/css/font-awesome.css', array(), '4.7.0', 'all' );
 
     if ( CS_ACTIVE_LIGHT_THEME ) {
@@ -37,7 +37,7 @@ if( ! function_exists( 'cs_admin_enqueue_scripts' ) ) {
 
     // framework core scripts
     wp_enqueue_script( 'cs-plugins',    CS_URI .'/assets/js/cs-plugins.js',    array(), '1.0.0', true );
-    wp_enqueue_script( 'cs-framework',  CS_URI .'/assets/js/cs-framework.js',  array( 'cs-plugins' ), '1.0.0', true );
+    wp_enqueue_script( 'finance',  CS_URI .'/assets/js/cs-framework.js',  array( 'cs-plugins' ), '1.0.0', true );
 
   }
   add_action( 'admin_enqueue_scripts', 'cs_admin_enqueue_scripts' );

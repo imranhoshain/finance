@@ -151,7 +151,7 @@ function finance_import_files() {
             'local_import_file'            => trailingslashit( get_template_directory() ) . 'inc/demo_data/finance-alldata.xml',
             'local_import_widget_file'     => trailingslashit( get_template_directory() ) . 'inc/demo_data/finance-widgets.wie',
             'local_import_customizer_file' => trailingslashit( get_template_directory() ) . 'inc/demo_data/finance-export.dat',            
-            'import_notice'                => __( 'Please waiting for a few minutes, do not close the window or refresh the page until the data is imported.', 'codex_restaurant' ),
+            'import_notice'                => __( 'Please waiting for a few minutes, do not close the window or refresh the page until the data is imported.', 'finance' ),
         ),
     );
     

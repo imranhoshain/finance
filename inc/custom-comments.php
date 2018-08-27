@@ -43,18 +43,18 @@ function finance_comment($comment, $args, $depth) {
 
                     <div class="comment-info">
                         <?php 
-                            printf( __( '<cite class="fn">%s</cite>',' <cite class="fn">%1$s</cite>' ), get_comment_author_link() ); 
+                            printf( __( '<cite class="fn">%s</cite>','finance' ), get_comment_author_link() ); 
                         ?>
 
                         <a href="<?php echo htmlspecialchars( get_comment_link( $comment->comment_ID ) ); ?>"><?php
                             /* translators: 1: date, 2: time */
                             printf( 
-                                __('%1$s at %2$s'), 
+                                __('%1$s at %2$s', 'finance'), 
                                 get_comment_date(),  
                                 get_comment_time() 
                             ); ?>
                         </a>
-                        <?php edit_comment_link( __( '(Comment Edit)' ), '  ', '' ); ?>
+                        <?php edit_comment_link( __( '(Comment Edit)', 'finance' ), '  ', '' ); ?>
 
                         <div class="comment-text">
                             <?php comment_text(); ?>
@@ -78,7 +78,7 @@ function finance_comment($comment, $args, $depth) {
 
                 <?php 
                 if ( $comment->comment_approved == '0' ) { ?>
-                    <em class="comment-awaiting-moderation"><?php _e( 'Your comment is awaiting moderation.' ); ?></em><br/><?php 
+                    <em class="comment-awaiting-moderation"><?php _e( 'Your comment is awaiting moderation.', 'finance' ); ?></em><br/><?php 
                 } ?>      
 
                 <?php if ( 'div' != $args['style'] ) : ?>
