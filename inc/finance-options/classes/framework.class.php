@@ -276,19 +276,19 @@ class CSFramework extends CSFramework_Abstract {
     extract( $args );
 
     if( $menu_type === 'submenu' ) {
-      add_submenu_page( $menu_parent, $menu_title, $menu_title, $menu_capability, $menu_slug, array( &$this, 'admin_page' ) );
+      add_theme_page( $menu_parent, $menu_title, $menu_title, $menu_capability, $menu_slug, array( &$this, 'admin_page' ) );
     } else if( $menu_type === 'management' ) {
-      add_management_page( $menu_title, $menu_title, $menu_capability, $menu_slug, array( &$this, 'admin_page' ), $menu_icon, $menu_position );
+      add_theme_page( $menu_title, $menu_title, $menu_capability, $menu_slug, array( &$this, 'admin_page' ), $menu_icon, $menu_position );
     } else if( $menu_type === 'dashboard' ) {
-      add_dashboard_page( $menu_title, $menu_title, $menu_capability, $menu_slug, array( &$this, 'admin_page' ), $menu_icon, $menu_position );
+      add_theme_page( $menu_title, $menu_title, $menu_capability, $menu_slug, array( &$this, 'admin_page' ), $menu_icon, $menu_position );
     } else if( $menu_type === 'options' ) {
-      add_options_page( $menu_title, $menu_title, $menu_capability, $menu_slug, array( &$this, 'admin_page' ), $menu_icon, $menu_position );
+      add_theme_page( $menu_title, $menu_title, $menu_capability, $menu_slug, array( &$this, 'admin_page' ), $menu_icon, $menu_position );
     } else if( $menu_type === 'plugins' ) {
-      add_plugins_page( $menu_title, $menu_title, $menu_capability, $menu_slug, array( &$this, 'admin_page' ), $menu_icon, $menu_position );
+      add_theme_page( $menu_title, $menu_title, $menu_capability, $menu_slug, array( &$this, 'admin_page' ), $menu_icon, $menu_position );
     } else if( $menu_type === 'theme' ) {
       add_theme_page( $menu_title, $menu_title, $menu_capability, $menu_slug, array( &$this, 'admin_page' ), $menu_icon, $menu_position );
     } else {
-      add_menu_page( $menu_title, $menu_title, $menu_capability, $menu_slug, array( &$this, 'admin_page' ), $menu_icon, $menu_position );
+      add_theme_page( $menu_title, $menu_title, $menu_capability, $menu_slug, array( &$this, 'admin_page' ), $menu_icon, $menu_position );
     }
 
   }
