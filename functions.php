@@ -145,15 +145,27 @@ include_once (get_template_directory().'/inc/required-plugins.php');
 
 //Import Demo Data
 function finance_import_files() {
-    return array(
-        array(
-            'import_file_name'             => 'Default Demo',
-            'local_import_file'            => trailingslashit( get_template_directory() ) . 'inc/demo_data/finance-alldata.xml',
-            'local_import_widget_file'     => trailingslashit( get_template_directory() ) . 'inc/demo_data/finance-widgets.wie',
-            'local_import_customizer_file' => trailingslashit( get_template_directory() ) . 'inc/demo_data/finance-export.dat',            
-            'import_notice'                => __( 'Please waiting for a few minutes, do not close the window or refresh the page until the data is imported.', 'finance' ),
-        ),
-    );
-    
+  return array(
+    array(
+      'import_file_name'             => 'Single Page Demo',
+      'categories'                   => array( 'New category', 'Old category' ),
+      'local_import_file'            => trailingslashit( get_template_directory() ) . 'ocdi/demo-content.xml',
+      'local_import_widget_file'     => trailingslashit( get_template_directory() ) . 'ocdi/widgets.json',
+      'local_import_customizer_file' => trailingslashit( get_template_directory() ) . 'ocdi/customizer.dat',      
+      'import_preview_image_url'     => get_template_directory_uri(). '/inc/demo_data/single page/single-page.png',
+      'import_notice'                => __( 'After you import this demo, you will have to setup the slider separately.', 'finance' ),
+      'preview_url'                  => 'http://www.your_domain.com/my-demo-1',
+    ),
+    array(
+      'import_file_name'             => 'Multi Page Demo',
+      'categories'                   => array( 'New category', 'Old category' ),
+      'local_import_file'            => trailingslashit( get_template_directory() ) . 'ocdi/demo-content2.xml',
+      'local_import_widget_file'     => trailingslashit( get_template_directory() ) . 'ocdi/widgets2.json',
+      'local_import_customizer_file' => trailingslashit( get_template_directory() ) . 'ocdi/customizer2.dat',      
+      'import_preview_image_url'     => get_template_directory_uri(). '/inc/demo_data/multipage/upcoming.jpg',
+      'import_notice'                => __( 'A special note for this import.', 'finance' ),
+      'preview_url'                  => 'http://www.your_domain.com/my-demo-2',
+    ),
+  );
 }
 add_filter( 'pt-ocdi/import_files', 'finance_import_files' );
