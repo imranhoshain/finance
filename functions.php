@@ -135,3 +135,25 @@ include_once(get_template_directory().'/inc/custom-comments.php');
  * Themeoptions and metabox functions.
  */
 include_once (get_template_directory().'/inc/theme-metabox-and-options.php');
+
+
+/**
+ * Plugin Required File
+ */
+include_once (get_template_directory().'/inc/class-tgm-plugin-activation.php');
+include_once (get_template_directory().'/inc/required-plugins.php');
+
+//Import Demo Data
+function finance_import_files() {
+    return array(
+        array(
+            'import_file_name'             => 'Default Demo',
+            'local_import_file'            => trailingslashit( get_template_directory() ) . 'inc/demo_data/finance-alldata.xml',
+            'local_import_widget_file'     => trailingslashit( get_template_directory() ) . 'inc/demo_data/finance-widgets.wie',
+            'local_import_customizer_file' => trailingslashit( get_template_directory() ) . 'inc/demo_data/finance-export.dat',            
+            'import_notice'                => __( 'Please waiting for a few minutes, do not close the window or refresh the page until the data is imported.', 'codex_restaurant' ),
+        ),
+    );
+    
+}
+add_filter( 'pt-ocdi/import_files', 'finance_import_files' );
